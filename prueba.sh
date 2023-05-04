@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Ejecucion de prueba.sh de forma remota modificado en git actualizado"
+echo "Ejecucion de prueba.sh de forma remota modificado en git actualizado otra vez"
