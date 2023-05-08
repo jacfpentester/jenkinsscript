@@ -1,5 +1,5 @@
-job('EjecucionRemotaScript1'){
-  description('Job DSL que ejecuta el script prueba.sh de github')
+job('Prueba2-Job-DSL'){
+  description('Job DSL de ejemplo para Jenkins')
   scm{
     git('https://github.com/jacfpentester/jenkinsscript.git', 'master'){
       node ->
@@ -8,13 +8,13 @@ job('EjecucionRemotaScript1'){
     }
   }
   parameters{
-    choiceParam('opciones',['Opcion 1', 'Opcion2', 'Opcion3 (default)'] )
+    choiceParam('Colores',['Rojo', 'Verde', 'Amarillo (default)'] )
   }
   triggers {
     cron('H/1 * * * *')
   }
   steps {
-    shell("cat hola.txt")
+    shell("bash prueba.sh")
   }
   publishers {
     mailer('jacfpentester@gmail.com',true,true)
