@@ -12,6 +12,7 @@ job('Prueba2-Job-DSL'){
   }
   triggers {
     cron('H/1 * * * *')
+    githubPush()
   }
   steps {
     shell("bash prueba.sh")
