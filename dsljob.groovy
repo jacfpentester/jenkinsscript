@@ -1,4 +1,4 @@
-job('Prueba2-Job-DSL'){
+job('hijodedslgit'){
   description('Job DSL de ejemplo para Jenkins')
   scm{
     git('https://github.com/jacfpentester/jenkinsscript.git', 'master'){
